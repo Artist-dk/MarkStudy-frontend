@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# MarkStudy - An Organized Course Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MarkStudy is an open-source learning platform that fetches Markdown files from GitHub and organizes them into structured courses for students. Built using the **MERN (MySQL, Express, React, Node.js) stack**, MarkStudy provides a seamless and user-friendly learning experience.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+# 📂 Frontend Repository: `markstudy-frontend`
 
-### `npm start`
+## 🚀 Features
+- **Fetch & Render Markdown**: Load course content directly from GitHub repositories.
+- **User Authentication**: Secure login/signup with JWT authentication.
+- **Search & Filter**: Easily find and navigate through courses.
+- **Dark Mode Support**: User-friendly UI with light and dark themes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📂 Folder Structure
+```
+📂 markstudy-frontend
+ ┣ 📂 public               # Static assets (favicon, logo)
+ ┣ 📂 src
+ ┃ ┣ 📂 assets            # Images, icons, fonts
+ ┃ ┣ 📂 components        # Reusable UI components
+ ┃ ┣ 📂 hooks             # Custom React hooks
+ ┃ ┣ 📂 layouts           # Layout components (Navbar, Footer, Sidebar)
+ ┃ ┣ 📂 pages             # Individual pages (Home, Course, Dashboard)
+ ┃ ┣ 📂 routes            # Route configuration
+ ┃ ┣ 📂 services          # API calls (Axios functions)
+ ┃ ┣ 📂 store             # Redux store (state management)
+ ┃ ┣ 📂 styles            # Global styles (Tailwind)
+ ┃ ┣ 📂 utils             # Utility functions (helper functions)
+ ┃ ┣ 📄 App.jsx           # Root component
+ ┃ ┗ 📄 main.jsx          # Main entry point
+ ┣ 📄 .env                # Environment variables
+ ┣ 📄 package.json        # Dependencies and scripts
+ ┣ 📄 tailwind.config.js  # Tailwind CSS config
+ ┗ 📄 vite.config.js      # Vite configuration
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔧 Installation & Setup
+```sh
+git clone https://github.com/YOUR_GITHUB_USERNAME/markstudy-frontend.git
+cd markstudy-frontend
+npm install   # Install dependencies
+npm run dev   # Start the frontend (Vite)
+```
 
-### `npm test`
+## ✅ Running Tests
+```sh
+npm test   # Runs Jest tests
+npx cypress open   # Open Cypress Test Runner
+npx playwright test   # Run Playwright tests
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Deployment
+```sh
+npm run build   # Builds the React app for production
+```
+Deploy the `dist/` folder to **Vercel**, **Netlify**, or any static hosting service.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🤝 Contributing
+We welcome contributions! Follow these steps:
+1. **Fork the repository**
+2. **Create a new branch** (`feature-new-component`)
+3. **Commit your changes**
+4. **Push to GitHub & create a Pull Request**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📩 Contact & Support
+- 📧 **Email**: support@markstudy.com
+- 🐦 **Twitter**: [@markstudy_app](https://twitter.com/markstudy_app)
+- 🌐 **Website**: [markstudy.com](https://markstudy.com)
 
-### `npm run eject`
+MarkStudy is an open-source initiative aimed at making structured learning more accessible. 🚀 Happy Learning! 📚
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
